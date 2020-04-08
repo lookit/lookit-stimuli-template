@@ -1,0 +1,1 @@
+All mp3 audio files should go in this directory. They should have the same filenames (except for extension) as any other audio files. For instance, you might have `instructions_1.mp3` here and `instructions_1.ogg` in the ogg directory.

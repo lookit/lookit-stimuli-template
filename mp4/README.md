@@ -1,0 +1,1 @@
+All mp4 video files should go in this directory. They should have the same filenames (except for extension) as any other video files. For instance, you might have `demo.mp4` here and `demo.webm` in the webm directory.

@@ -1,0 +1,1 @@
+All webm video files should go in this directory. They should have the same filenames (except for extension) as any other video files. For instance, you might have `demo.webm` here and `demo.mp4` in the mp4 directory.
