@@ -28,7 +28,7 @@ By keeping the various file types in their own directories, and using the same f
 
 That's most straightforward to do using the command line or a desktop client for GitHub, like [GitHub Desktop](https://desktop.github.com/) or [Sourcetree](https://www.sourcetreeapp.com/). However, you can also do it right in Github by clicking 'Create new file' instead of 'Upload files' from the place where you want to add a new directory. Then, in the box to type the file name, type `NewDirectoryName/README.md`, replacing NewDirectoryName with your desired directory name.  This will create the new directory and a README.md file inside it. Then you can add other files too.
 
-## Accessing your stimuli and telling Lookit where to find them
+## Accessing your stimuli and telling Lookit where to find them (or: what do I put for ``baseDir``?)
 
 You have two options:
 
@@ -42,7 +42,7 @@ If you always want to point to the latest version of your stimuli, you can acces
  
  `https://raw.githubusercontent.com/kimberscott/lookit-stimuli-template/master/img/cats.jpg`
  
- Most Lookit frames allow you to specify a `baseDir` or base directory for your files, and then only provide filenames instead of full paths. You can learn more about that in the [docs](https://lookit.readthedocs.io/en/develop/researchers-prep-stimuli.html#directory-structure). In this case, your `baseDir` would be:
+ Most Lookit frames allow you to specify a `baseDir` or base directory for your files, and then only provide filenames instead of full paths. You can learn more about that in the [docs](https://lookit.readthedocs.io/en/develop/researchers-prep-stimuli.html#directory-structure). **In this case, your `baseDir` would be**:
  
  `https://raw.githubusercontent.com/YOUR_USERNAME/lookit-stimuli-template/master/`
  
@@ -56,7 +56,7 @@ The URLs for the stimuli as they were at the time of this commit are:
 
 `https://raw.githubusercontent.com/YOUR_USERNAME/lookit-stimuli-template/COMMIT_ID/DIRECTORY/FILENAME.EXT`
 
-And the `baseDir` to use is:
+And **the `baseDir` to use is:**
 
 `https://raw.githubusercontent.com/YOUR_USERNAME/lookit-stimuli-template/COMMIT_ID/`
 
