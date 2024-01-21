@@ -101,24 +101,6 @@
             ],
             "nextButtonText": "Please wait for your child to answer, and then press 'Next'"
         },
-        "Sofia-welcome": {
-            "kind": "exp-lookit-video",
-            "video": {
-                "loop": false,
-                "position": "fill",
-                "source": "Intro_video"
-            },
-            "backgroundColor": "white",
-            "autoProceed": false,
-            "requireVideoCount": 1,
-            "doRecording": false,
-            "frameOffsetAfterPause": 0,
-            "baseDir": "https://raw.githubusercontent.com/nicolehope5/lookit-stimuli-template/master/",
-            "videoTypes": [
-                "webm",
-                "mp4"
-            ]
-        },
         "bunny-intro": {
             "kind": "exp-lookit-video",
             "video": {
@@ -158,7 +140,7 @@
                 "css": {
                     "font": "13pt sans-serif"
                 },
-                "text": "If your child can click on their own, let them click once they are done answering the prompt. If they can't click on their own, you can click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
                 "title": "For Parents"
             },
             "nextButtonText": "Next"
@@ -184,7 +166,7 @@
                 "css": {
                     "font": "13pt sans-serif"
                 },
-                "text": "If your child can click on their own, let them click once they are done answering the prompt. If they can't click on their own, you can click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
                 "title": "For Parents"
             },
             "nextButtonText": "Next"
@@ -424,6 +406,9 @@
         "instructions",
         "video-config",
         "welcome",
+        "bunny-intro",
+        "warmup-books",
+        "warmup-towers",
         "counting-check",
         "info-survey",
         "exit-survey"
