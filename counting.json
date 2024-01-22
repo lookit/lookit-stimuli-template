@@ -3,7 +3,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "In this study, we want to know how children use what they know about their own abilities -- in this case, their ability to count -- to help make decisions.  As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting: given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves.\n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback.",
+                "text": "The goal of this study is to understand whether or not children are sensitive to perceptual differences that may make counting easier or harder. As you may recall, this study started off by asking your child to determine which book is easier to count and then which tower is easier to build. These were warm up trials. Then, your child was asked to discriminate between # sets of dotted cards. These dots varied in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nIf young children can generate consistent intuitions about the perceptual difficulty of this counting task, this suggests that they may be sensitive to factors that affect perceptual discrimination. \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback.",
                 "title": "Thank you for your participation!"
             }
         },
@@ -171,6 +171,32 @@
             },
             "nextButtonText": "Next"
         },
+        "warmup-dots": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "bunnyintro2"
+            },
+            "backgroundColor": "white",
+            "autoProceed": false,
+            "requireVideoCount": 1,
+            "doRecording": true,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "parentTextBlock": {
+                "css": {
+                    "font": "13pt sans-serif"
+                },
+                "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                "title": "For Parents"
+            },
+            "nextButtonText": "Next"
+        },
         "test-trials": {
             "kind": "choice",
             "sampler": "random-parameter-set",
@@ -180,7 +206,14 @@
                         "position": "fill",
                         "source": "VIDEO1"
                     },
-                    "doRecording": false
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
                 },
                 {
                     "video": {
@@ -192,10 +225,10 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "text": "If your child can click on their own, let them click once they are done answering the prompt. If they can't click on their own, you can click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
                         "title": "For Parents"
                     },
-                    "doRecording": false
+                    "doRecording": true
                 },
                 {
                     "video": {
@@ -207,10 +240,10 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "text": "If your child can click on their own, let them click once they are done answering the prompt. If they can't click on their own, you can click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
                         "title": "For Parents"
                     },
-                    "doRecording": false
+                    "doRecording": true
                 }
             ],
             "parameterSets": [
@@ -334,20 +367,22 @@
             ],
             "parameterSets": [
                 {
-                    "VIDEO1": "countStars",
-                    "VIDEO2": "countDragons",
-                    "VIDEO3": "countFlowers",
-                    "VIDEO4": "countSuns",
-                    "VIDEO5": "countTeddybears",
-                    "VIDEO6": "countFrogs"
+                    "VIDEO1": "countingintro",
+                    "VIDEO2": "countStars",
+                    "VIDEO3": "countDragons",
+                    "VIDEO4": "countFlowers",
+                    "VIDEO5": "countSuns",
+                    "VIDEO6": "countTeddybears",
+                    "VIDEO7": "countFrogs"
                 },
                 {
-                    "VIDEO1": "countStars",
-                    "VIDEO2": "countDragons",
-                    "VIDEO3": "countFlowers",
-                    "VIDEO4": "countSuns",
-                    "VIDEO5": "countTeddybears",
-                    "VIDEO6": "countFrogs"
+                    "VIDEO1": "countingintro",
+                    "VIDEO2": "countStars",
+                    "VIDEO3": "countDragons",
+                    "VIDEO4": "countFlowers",
+                    "VIDEO5": "countSuns",
+                    "VIDEO6": "countTeddybears",
+                    "VIDEO7": "countFrogs"
                 }
             ],
             "commonFrameProperties": {
@@ -409,6 +444,8 @@
         "bunny-intro",
         "warmup-books",
         "warmup-towers",
+        "warmup-dots",
+        "test-trials",
         "counting-check",
         "info-survey",
         "exit-survey"
