@@ -3,8 +3,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "The goal of this study is to understand whether or not children are sensitive to perceptual differences that may make counting easier or harder. As you may recall, this study started off by asking your child to determine which book is easier to count and then which tower is easier to build. These were warm up trials. Then, your child was asked to discriminate between # sets of dotted cards. These dots varied in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nIf young children can generate consistent intuitions about the perceptual difficulty of this counting task, this suggests that they may be sensitive to factors that affect perceptual discrimination. \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback.",
-                "title": "Thank you for your participation!"
+                "text": "In this study, we want to know how children use what they know about their own abilities -- in this case, their ability to count -- to help make decisions.  As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves.  \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
             }
         },
         "study-intro": {
@@ -434,7 +433,546 @@
                     }
                 },
                 "nextButtonText": "Next"
+            },
+        "testFrameGroup": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO1"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG1P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG1G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO2"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG2P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG2G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO3"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                    
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG3P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG3G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO4"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG4P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG4G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO5"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                    
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG5P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG5G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO6"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG6P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG6G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO7"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                    
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG7P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG7G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO8"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG8P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG8G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO9"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                    
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG9P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG9G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO10"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG10P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG10G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO11"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                    
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG11P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG11G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO12"
+                    },
+                    "parentTextBlock": {
+                        "css": {
+                            "font": "13pt sans-serif"
+                        },
+                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents"
+                    },
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-images-audio",
+                    "images": [
+                        {
+                            "id": "option1",
+                            "src": "IMG12P",
+                            "top": 20,
+                            "width": 40,
+                            "left": 5
+                            
+                        },
+                        {
+                            "id": "option2",
+                            "src": "IMG12G",
+                            "top": 20,
+                            "width": 40,
+                            "left": 55
+                        }
+                    ],
+                    "doRecording": false,
+                    "choiceRequired": true
+                }
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO1": "T1-A",
+                    "VIDEO2": "T2-A",
+                    "VIDEO3": "T3-A",
+                    "VIDEO4": "T4-A",
+                    "VIDEO5": "T5-A",
+                    "VIDEO6": "T6-A",
+                    "VIDEO7": "T7-A",
+                    "VIDEO8": "T8-A",
+                    "VIDEO9": "T9-A",
+                    "VIDEO10": "T10-A",
+                    "VIDEO11": "T11-A",
+                    "VIDEO12": "T12-A",
+                    "IMG1P": "T1-A-P.png",
+                    "IMG1G": "T1-A-G.png",
+                    "IMG2P": "T2-A-P.png",
+                    "IMG2G": "T2-A-G.png",
+                    "IMG3P": "T3-A-P.png",
+                    "IMG3G": "T3-A-G.png",
+                    "IMG4P": "T4-A-P.png",
+                    "IMG4G": "T4-A-G.png",
+                    "IMG5P": "T5-A-P.png",
+                    "IMG5G": "T5-A-G.png", 
+                    "IMG6P": "T6-A-P.png",
+                    "IMG6G": "T6-A-G.png",
+                    "IMG7P": "T7-A-P.png",
+                    "IMG7G": "T7-A-G.png",
+                    "IMG8P": "T8-A-P.png",
+                    "IMG8G": "T8-A-G.png",
+                    "IMG9P": "T9-A-P.png",
+                    "IMG9G": "T9-A-G.png",
+                    "IMG10P": "T10-A-P.png",
+                    "IMG10G": "T10-A-G.png",
+                    "IMG11P": "T11-A-P.png",
+                    "IMG11G": "T11-A-G.png",
+                    "IMG12P": "T12-A-P.png",
+                    "IMG12G": "T12-A-G.png"
+                },
+                {
+                    "VIDEO1": "T1-B",
+                    "VIDEO2": "T2-B",
+                    "VIDEO3": "T3-B",
+                    "VIDEO4": "T4-B",
+                    "VIDEO5": "T5-B",
+                    "VIDEO6": "T6-B",
+                    "VIDEO7": "T7-B",
+                    "VIDEO8": "T8-B",
+                    "VIDEO9": "T9-B",
+                    "VIDEO10": "T10-B",
+                    "VIDEO11": "T11-B",
+                    "VIDEO12": "T12-B",
+                    "IMG1P": "T1-B-P.png",
+                    "IMG1G": "T1-B-G.png",
+                    "IMG2P": "T2-B-P.png",
+                    "IMG2G": "T2-B-G.png",
+                    "IMG3P": "T3-B-P.png",
+                    "IMG3G": "T3-B-G.png",
+                    "IMG4P": "T4-B-P.png",
+                    "IMG4G": "T4-B-G.png",
+                    "IMG5P": "T5-B-P.png",
+                    "IMG5G": "T5-B-G.png", 
+                    "IMG6P": "T6-B-P.png",
+                    "IMG6G": "T6-B-G.png",
+                    "IMG7P": "T7-B-P.png",
+                    "IMG7G": "T7-B-G.png",
+                    "IMG8P": "T8-B-P.png",
+                    "IMG8G": "T8-B-G.png",
+                    "IMG9P": "T9-B-P.png",
+                    "IMG9G": "T9-B-G.png",
+                    "IMG10P": "T10-B-P.png",
+                    "IMG10G": "T10-B-G.png",
+                    "IMG11P": "T11-B-P.png",
+                    "IMG11G": "T11-B-G.png",
+                    "IMG12P": "T12-B-P.png",
+                    "IMG12G": "T12-B-G.png"
+                }
+            ],
+            "commonFrameProperties": {
+                "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
+                "parentTextBlock": {
+                    "text": "Click on one of the images to answer. If your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                }
             }
+}
     },
     "sequence": [
         "study-intro",
@@ -445,7 +983,7 @@
         "warmup-books",
         "warmup-towers",
         "warmup-dots",
-        "test-trials",
+        "testFrameGroup",
         "counting-check",
         "info-survey",
         "exit-survey"
