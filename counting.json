@@ -3,7 +3,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "In this study, we want to know how children use what they know about their own abilities -- in this case, their ability to count -- to help make decisions.  As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves.  \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
+                "text": "In this study, we want to know how children use what they know about their own abilities -- in this case, their ability to count -- to help make decisions. As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves.  \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
             }
         },
         "study-intro": {
@@ -448,13 +448,14 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
+                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents:"
                     },
                     "doRecording": true
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -473,7 +474,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -485,13 +487,14 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
+                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents:"
                     },
                     "doRecording": true
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -510,7 +513,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -522,14 +526,15 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
+                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "title": "For Parents:"
                     },
                     "doRecording": true
                     
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -548,7 +553,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -567,6 +573,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -585,7 +592,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -605,6 +613,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -623,7 +632,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -642,6 +652,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -660,7 +671,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -680,6 +692,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -698,7 +711,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -717,6 +731,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -735,7 +750,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -755,6 +771,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -773,7 +790,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -792,6 +810,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -810,7 +829,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -830,6 +850,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -848,7 +869,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 },
                 {
                     "kind": "exp-lookit-video",
@@ -867,6 +889,7 @@
                 },
                 {
                     "kind": "exp-lookit-images-audio",
+                    "audio": "trialquestion",
                     "images": [
                         {
                             "id": "option1",
@@ -885,7 +908,8 @@
                         }
                     ],
                     "doRecording": false,
-                    "choiceRequired": true
+                    "choiceRequired": true,
+                    "audioTypes": ["mp3","ogg"]
                 }
             ],
             "parameterSets": [
@@ -969,8 +993,11 @@
             "commonFrameProperties": {
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
                 "parentTextBlock": {
-                    "text": "Click on one of the images to answer. If your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
-                }
+                    "text": "Click on one of the images to answer.\nIf your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                },
+                "showPreviousButton": false,
+                "audioTypes": ["ogg"],
+                "videoTypes": ["mp4"]
             }
 }
     },
