@@ -1,24 +1,15 @@
 {
     "frames": {
-        "exit-survey": {
-            "kind": "exp-lookit-exit-survey",
-            "debriefing": {
-                "text": "In this study, we want to know how children use what they know about their own abilities -- in this case, their ability to count -- to help make decisions. As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves.  \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
-            }
-        },
         "study-intro": {
             "kind": "exp-lookit-text",
             "blocks": [
                 {
                     "emph": true,
-                    "text": "First, let's go over what will happen!",
-                    "title": "'Help Bunny Get Ready for Preschool' study overview"
+                    "text": "\nFirst, let's go over what will happen!",
+                    "title": "'Help Bunny Get Ready for Preschool' Study Overview"
                 },
                 {
-                    "text": "In this study, your child will be shown pairs of images, each pair featuring a different number of dots. They will judge the relative difficulty of counting the dots within each pair. After each pair of images, your child will be asked which set of dots is easier to count. When they respond -- whether verbally, by pointing, or otherwise -- press the button corresponding to your child’s choice!"
-                },
-                {
-                    "text": "Please do not add any additional explanations to the story, and try not to influence your child's answer. There is no right answer, we are just interested in how children of this age think!"
+                    "text": "\nIn this study, your child will be shown 11 pairs of images, each pair featuring a different number of dots. They will judge the relative difficulty of counting the dots within each pair. After each pair of images, your child will be asked which set of dots is easier to count."
                 }
             ],
             "showPreviousButton": false
@@ -30,13 +21,13 @@
                     "title": "1. Overview of how to participate in this study",
                     "listblocks": [
                         {
-                            "text": "You and your child will listen to 11 short prompts, each followed by a question for your child to answer."
+                            "text": "You and your child will see 11 pairs of images, each followed by a question for your child to answer."
                         },
                         {
-                            "text": "If they are comfortable using the mouse to click their answer they can do it themselves, or you can wait until they are done responding and you can click ‘Next’ to move on."
+                            "text": "If your child responds verbally or points but cannot click the card themselves, please click the card (purple or green) corresponding to their choice."
                         },
                         {
-                            "text": "While you go through the task together, please try not to influence or correct their answers. We are interested in how your child thinks, rather than whether or not they say what adults might consider the 'correct' answer."
+                            "text": "If they do not choose one of the two options, please just click the ‘No Reply’ button."
                         }
                     ]
                 },
@@ -105,7 +96,8 @@
             "video": {
                 "loop": false,
                 "position": "fill",
-                "source": "bunny intro"
+                "source": "bunny intro",
+                "nextButtonText": "Next"
             },
             "backgroundColor": "white",
             "autoProceed": false,
@@ -129,6 +121,7 @@
                         "source": "VIDEO0",
                         "nextButtonText": "Next"
                     },
+                    "autoProceed":false, 
                     "parentTextBlock": {
                         "css": {
                             "font": "13pt sans-serif"
@@ -276,13 +269,6 @@
                         "position": "fill",
                         "source": "VIDEO1"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents:"
-                    },
                     "doRecording": true
                 },
                 {
@@ -290,22 +276,29 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG1P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
-                            
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG1G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -315,13 +308,6 @@
                         "position": "fill",
                         "source": "VIDEO2"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents:"
-                    },
                     "doRecording": true
                 },
                 {
@@ -329,22 +315,30 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG2P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG2G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -354,37 +348,37 @@
                         "position": "fill",
                         "source": "VIDEO3"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents:"
-                    },
                     "doRecording": true
-                    
                 },
                 {
                     "kind": "exp-lookit-images-audio",
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG3P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG3G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -394,13 +388,6 @@
                         "position": "fill",
                         "source": "VIDEO4"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
                 },
                 {
@@ -408,22 +395,30 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG4P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG4G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -433,37 +428,37 @@
                         "position": "fill",
                         "source": "VIDEO5"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
-                    
                 },
                 {
                     "kind": "exp-lookit-images-audio",
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG5P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG5G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -473,13 +468,6 @@
                         "position": "fill",
                         "source": "VIDEO6"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
                 },
                 {
@@ -487,22 +475,30 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG6P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG6G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -512,37 +508,37 @@
                         "position": "fill",
                         "source": "VIDEO7"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
-                    
                 },
                 {
                     "kind": "exp-lookit-images-audio",
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG7P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG7G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -550,14 +546,15 @@
                     "kind": "exp-lookit-video",
                      "video": {
                         "position": "fill",
-                        "source": "VIDEO8"
+                        "source": "HALFWAY"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
+                    "doRecording": true
+                },
+                {
+                    "kind": "exp-lookit-video",
+                     "video": {
+                        "position": "fill",
+                        "source": "VIDEO8"
                     },
                     "doRecording": true
                 },
@@ -566,22 +563,30 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG8P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG8G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -591,37 +596,37 @@
                         "position": "fill",
                         "source": "VIDEO9"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
-                    
                 },
                 {
                     "kind": "exp-lookit-images-audio",
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG9P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG9G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -631,13 +636,6 @@
                         "position": "fill",
                         "source": "VIDEO10"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
                 },
                 {
@@ -645,22 +643,30 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG10P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG10G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -670,13 +676,6 @@
                         "position": "fill",
                         "source": "VIDEO11"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
                     
                 },
@@ -685,22 +684,30 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG11P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG11G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 },
@@ -710,13 +717,6 @@
                         "position": "fill",
                         "source": "VIDEO12"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "Have your child indicate their answer by pointing or saying 'left', 'purple side', 'green side', etc.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents"
-                    },
                     "doRecording": true
                 },
                 {
@@ -724,22 +724,30 @@
                     "audio": "trialquestion",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG12P",
-                            "top": 20,
-                            "width": 40,
+                            "top": 10,
+                            "width": 35,
                             "left": 5
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG12G",
-                            "top": 20,
-                            "width": 40,
-                            "left": 55
+                            "top": 10,
+                            "width": 35,
+                            "left": 60
+                        },
+                        {
+                            "id": "NR",
+                            "src": "no response.png",
+                            "top": 83,
+                            "left": 42.5,
+                            "width": 15
+                            
                         }
                     ],
-                    "doRecording": false,
+                    "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
                 }
@@ -752,6 +760,7 @@
                     "VIDEO4": "T4-A",
                     "VIDEO5": "T5-A",
                     "VIDEO6": "T6-A",
+                    "HALFWAY": "halfwaydone",
                     "VIDEO7": "T7-A",
                     "VIDEO8": "T8-A",
                     "VIDEO9": "T9-A",
@@ -790,6 +799,7 @@
                     "VIDEO4": "T4-B",
                     "VIDEO5": "T5-B",
                     "VIDEO6": "T6-B",
+                    "HALFWAY": "halfwaydone",
                     "VIDEO7": "T7-B",
                     "VIDEO8": "T8-B",
                     "VIDEO9": "T9-B",
@@ -825,13 +835,13 @@
             "commonFrameProperties": {
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
                 "parentTextBlock": {
-                    "text": "Click on one of the images to answer.\nIf your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                    "text": "\nIf your child responds verbally or points but cannot click the button themselves, please click the button corresponding to their choice.\nIf they do not choose one of the two options, please just click the 'Next' button."
                 },
                 "showPreviousButton": false,
                 "audioTypes": ["ogg"],
                 "videoTypes": ["mp4"]
             }
-    },
+        },
         "counting-check": {
             "kind": "choice",
             "sampler": "random-parameter-set",
@@ -984,7 +994,7 @@
                 "PIContact": "Nicole Coates at nhcoates@mit.edu",
                 "procedures": "You and your child will go through 6 short scenes and your child will be asked a question after each one. There are no anticipated risks associated with participating.",
                 "institution": "MIT"
-            },
+        },
         "info-survey": {
                 "kind": "exp-lookit-survey",
                 "formSchema": {
@@ -1011,7 +1021,13 @@
                     }
                 },
                 "nextButtonText": "Next"
+        },
+        "exit-survey": {
+            "kind": "exp-lookit-exit-survey",
+            "debriefing": {
+                "text": "In this study, we want to know how children use what they know about their own abilities -- in this case, their ability to count -- to help make decisions. As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves.  \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
             }
+        }
     },
     "sequence": [
         "study-intro",
