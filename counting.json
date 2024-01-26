@@ -9,10 +9,24 @@
                     "title": "'Help Bunny Get Ready for Preschool' Study Overview"
                 },
                 {
-                    "text": "\nIn this study, your child will be shown 11 pairs of images, each pair featuring a different number of dots. They will judge the relative difficulty of counting the dots within each pair. After each pair of images, your child will be asked which set of dots is easier to count."
+                    "text": "\nIn this study, your child will be shown 12 pairs of images, each pair featuring a different number of dots. They will judge the relative difficulty of counting the dots within each pair. After each pair of images, your child will be asked which set of dots is easier to count."
                 }
             ],
             "showPreviousButton": false
+        },
+        "video-config": {
+            "kind": "exp-video-config",
+            "troubleshootingIntro": ""
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "PIName": "Laura Schulz",
+            "datause": "We are interested in how children use what they know about their own abilities to make decisions. A researcher will watch your video and match child's answer to the button selections that they make at the end of each prompt, as well as other information such as interactions between you and your child during the story.",
+            "payment": "After you finish the study, we will email you a $XX Amazon gift card within three days. To be eligible for the gift card your child must NOT have been in other XXX studies, must be in the age range for this study, submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child for participating, but we hope you will enjoy the experience.",
+            "purpose": "This study is about children’s knowledge of their own abilities.",
+            "PIContact": "Karla Perez at perezke@mit.edu",
+            "procedures": "You and your child will go through 12 short scenes and your child will be asked a question after each one. There are no anticipated risks associated with participating.",
+            "institution": "MIT"
         },
         "instructions": {
             "kind": "exp-lookit-instructions",
@@ -21,7 +35,7 @@
                     "title": "1. Overview of how to participate in this study",
                     "listblocks": [
                         {
-                            "text": "You and your child will see 11 pairs of images, each followed by a question for your child to answer."
+                            "text": "You and your child will see 12 pairs of images, each followed by a question for your child to answer."
                         },
                         {
                             "text": "If your child responds verbally or points but cannot click the card themselves, please click the card (purple or green) corresponding to their choice."
@@ -67,10 +81,6 @@
                 }
             ],
             "nextButtonText": "Next"
-        },
-        "video-config": {
-            "kind": "exp-video-config",
-            "troubleshootingIntro": ""
         },
         "welcome": {
             "kind": "exp-lookit-video",
@@ -150,7 +160,7 @@
                     "kind": "exp-lookit-images-audio",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG-booksP",
                             "top": 20,
                             "width": 40,
@@ -158,7 +168,7 @@
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG-booksG",
                             "top": 20,
                             "width": 40,
@@ -188,7 +198,7 @@
                     "kind": "exp-lookit-images-audio",
                     "images": [
                         {
-                            "id": "option1",
+                            "id": "left",
                             "src": "IMG-towersP",
                             "top": 20,
                             "width": 40,
@@ -196,7 +206,7 @@
                             
                         },
                         {
-                            "id": "option2",
+                            "id": "right",
                             "src": "IMG-towersG",
                             "top": 20,
                             "width": 40,
@@ -235,8 +245,10 @@
                     "text": "Click on one of the images to answer.\nIf your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                 },
                 "showPreviousButton": false,
+                "choiceRequired": true,
                 "audioTypes": ["ogg"],
-                "videoTypes": ["mp4"]
+                "videoTypes": ["mp4"],
+                "showWaitForRecordingMessage": false
             }
             
         },
@@ -835,11 +847,13 @@
             "commonFrameProperties": {
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
                 "parentTextBlock": {
-                    "text": "\nIf your child responds verbally or points but cannot click the button themselves, please click the button corresponding to their choice.\nIf they do not choose one of the two options, please just click the 'Next' button."
+                    "title": "For Parents:",
+                    "text": "\nIf your child responds verbally or points but cannot click the button themselves, please click the button corresponding to their choice.\nIf they do not choose one of the two options, please just click the 'No Response' button."
                 },
                 "showPreviousButton": false,
                 "audioTypes": ["ogg"],
-                "videoTypes": ["mp4"]
+                "videoTypes": ["mp4"],
+                "showWaitForRecordingMessage": false
             }
         },
         "counting-check": {
@@ -856,7 +870,7 @@
                       "css": {
                           "font": "13pt sans-serif"
                       },
-                      "title": "For Parents",
+                      "title": "For Parents:",
                       "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
@@ -871,7 +885,7 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "title": "For Parents",
+                        "title": "For Parents:",
                         "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
@@ -886,7 +900,7 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "title": "For Parents",
+                        "title": "For Parents:",
                         "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
@@ -901,7 +915,7 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "title": "For Parents",
+                        "title": "For Parents:",
                         "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
@@ -916,7 +930,7 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "title": "For Parents",
+                        "title": "For Parents:",
                         "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
@@ -931,7 +945,7 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "title": "For Parents",
+                        "title": "For Parents:",
                         "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
@@ -946,7 +960,7 @@
                         "css": {
                             "font": "13pt sans-serif"
                         },
-                        "title": "For Parents",
+                        "title": "For Parents:",
                         "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
@@ -985,16 +999,6 @@
                 "requireVideoCount": 1
             }
         },
-        "video-consent": {
-                "kind": "exp-lookit-video-consent",
-                "PIName": "Laura Schulz",
-                "datause": "We are interested in how children describe how different flowers bloom. A research assistant will watch your video and mark down your child's answer to the questions at the end of each prompt, as well as other information such as interactions between you and your child during the story.",
-                "payment": "After you finish the study, we will email you a $5 Amazon gift card within three days. To be eligible for the gift card your child must NOT have been in other Alien Greenhouse studies, be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
-                "purpose": "This study is children’s sensitivity to how things change over time.",
-                "PIContact": "Nicole Coates at nhcoates@mit.edu",
-                "procedures": "You and your child will go through 6 short scenes and your child will be asked a question after each one. There are no anticipated risks associated with participating.",
-                "institution": "MIT"
-        },
         "info-survey": {
                 "kind": "exp-lookit-survey",
                 "formSchema": {
@@ -1031,8 +1035,9 @@
     },
     "sequence": [
         "study-intro",
-        "instructions",
         "video-config",
+        "video-consent",
+        "instructions",
         "welcome",
         "bunny-intro",
         "warm-ups",
