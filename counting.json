@@ -131,14 +131,7 @@
                         "source": "VIDEO0",
                         "nextButtonText": "Next"
                     },
-                    "autoProceed":false, 
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "13pt sans-serif"
-                        },
-                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents:"
-                    },
+                    "autoProceed":false,
                     "doRecording": false
                 },
                 {
@@ -149,9 +142,9 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
-                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "text": "Click on one of the images to answer. If your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
                         "title": "For Parents:"
                     },
                     "doRecording": true
@@ -187,9 +180,9 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
-                        "text": "We're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
+                        "text": "Click on one of the images to answer. If your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
                         "title": "For Parents:"
                     },
                     "doRecording": true
@@ -242,7 +235,11 @@
             "commonFrameProperties": {
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
                 "parentTextBlock": {
-                    "text": "Click on one of the images to answer.\nIf your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                    "css": {
+                        "font": "11pt sans-serif"
+                    },
+                    "title": "For Parents:",
+                    "text": "Click on one of the images to answer. If your child needs assistance, please click for them. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                 },
                 "showPreviousButton": false,
                 "choiceRequired": true,
@@ -848,7 +845,7 @@
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
                 "parentTextBlock": {
                     "title": "For Parents:",
-                    "text": "\nIf your child responds verbally or points but cannot click the button themselves, please click the button corresponding to their choice.\nIf they do not choose one of the two options, please just click the 'No Response' button."
+                    "text": "If your child responds verbally or points but cannot click the button themselves, please click the button corresponding to their choice. If they do not choose one of the two options, please just click the 'No Response' button."
                 },
                 "showPreviousButton": false,
                 "audioTypes": ["ogg"],
@@ -868,10 +865,10 @@
                     },
                     "parentTextBlock": {
                       "css": {
-                          "font": "13pt sans-serif"
+                          "font": "11pt sans-serif"
                       },
                       "title": "For Parents:",
-                      "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                      "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -883,10 +880,10 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
                         "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -898,10 +895,10 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
                         "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -913,10 +910,10 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
                         "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -928,10 +925,10 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
                         "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -943,10 +940,10 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
                         "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -958,10 +955,10 @@
                     },
                     "parentTextBlock": {
                         "css": {
-                            "font": "13pt sans-serif"
+                            "font": "11pt sans-serif"
                         },
                         "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 }
