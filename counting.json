@@ -6,7 +6,7 @@
                 {
                     "emph": true,
                     "text": "\nFirst, let's go over what will happen!",
-                    "title": "'Help Bunny Get Ready for Preschool' Study Overview"
+                    "title": "'Help Bunny Learn to Count!' Study Overview"
                 },
                 {
                     "text": "\nIn this study, your child will be shown 12 pairs of images, each pair featuring a different number of dots. They will judge the relative difficulty of counting the dots within each pair. After each pair of images, your child will be asked which set of dots is easier to count."
@@ -21,8 +21,8 @@
         "video-consent": {
             "kind": "exp-lookit-video-consent",
             "PIName": "Laura Schulz",
-            "datause": "We are interested in how children use what they know about their own abilities to make decisions. A researcher will watch your video and match child's answer to the button selections that they make at the end of each prompt, as well as other information such as interactions between you and your child during the story.",
-            "payment": "After you finish the study, we will email you a $XX Amazon gift card within three days. To be eligible for the gift card your child must NOT have been in other XXX studies, must be in the age range for this study, submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child for participating, but we hope you will enjoy the experience.",
+            "datause": "We want to know if children understand what makes sets easier and harder to count, even before they have a lot of experience counting themselves. A researcher will watch your video and match child's answer to the button selections that they make at the end of each prompt, as well as other information such as interactions between you and your child during the story.",
+            "payment": "After you finish the study, we will email you a $5 Amazon gift card within three days. To be eligible for the gift card your child must be in the age range for this study, submit a valid consent statement, and we need to see that there is a child with you. We will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child for participating, but we hope you will enjoy the experience.",
             "purpose": "This study is about children’s knowledge of their own abilities.",
             "PIContact": "Karla Perez at perezke@mit.edu",
             "procedures": "You and your child will go through 12 short scenes and your child will be asked a question after each one. There are no anticipated risks associated with participating.",
@@ -41,7 +41,7 @@
                             "text": "If your child responds verbally or points but cannot click the card themselves, please click the card (purple or green) corresponding to their choice."
                         },
                         {
-                            "text": "If they do not choose one of the two options, please just click the ‘No Reply’ button."
+                            "text": "If they do not choose one of the two cards (purple or green), please just click the ‘No Reply’ button."
                         }
                     ]
                 },
@@ -90,6 +90,7 @@
                 "source": "welcome"
             },
             "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
             "autoProceed": false,
             "requireVideoCount": 1,
             "doRecording": false,
@@ -110,6 +111,7 @@
                 "nextButtonText": "Next"
             },
             "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
             "autoProceed": false,
             "requireVideoCount": 1,
             "doRecording": false,
@@ -140,14 +142,9 @@
                         "position": "fill",
                         "source": "VIDEO1"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "text": "Click on one of the images to answer. If your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents:"
-                    },
-                    "doRecording": true
+                    "doRecording": true,
+                    "pageColor": " white",
+                    "backgroundColor": " white"
                 },
                 {
                     "kind": "exp-lookit-images-audio",
@@ -178,13 +175,6 @@
                         "position": "fill",
                         "source": "VIDEO2"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "text": "Click on one of the images to answer. If your child needs assistance, please click for them.\nWe're interested in what your child thinks without your help, so please don't give them any hints or feedback!",
-                        "title": "For Parents:"
-                    },
                     "doRecording": true
                 },
                 {
@@ -209,8 +199,7 @@
                     "doRecording": true,
                     "choiceRequired": true,
                     "audioTypes": ["mp3","ogg"]
-                }
-                
+                }  
             ],
             "parameterSets": [
                 {
@@ -235,9 +224,6 @@
             "commonFrameProperties": {
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
                 "parentTextBlock": {
-                    "css": {
-                        "font": "11pt sans-serif"
-                    },
                     "title": "For Parents:",
                     "text": "Click on one of the images to answer. If your child needs assistance, please click for them. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                 },
@@ -257,6 +243,7 @@
                 "source": "trialsIntro"
             },
             "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
             "autoProceed": false,
             "requireVideoCount": 1,
             "doRecording": false,
@@ -686,7 +673,6 @@
                         "source": "VIDEO11"
                     },
                     "doRecording": true
-                    
                 },
                 {
                     "kind": "exp-lookit-images-audio",
@@ -843,15 +829,37 @@
             ],
             "commonFrameProperties": {
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
+                "pageColor": " white",
+                "backgroundColor": " white",
                 "parentTextBlock": {
                     "title": "For Parents:",
-                    "text": "If your child responds verbally or points but cannot click the button themselves, please click the button corresponding to their choice. If they do not choose one of the two options, please just click the 'No Response' button."
+                    "text": "If your child cannot click the button themselves, please click the button corresponding to their choice. If they do not choose one of the two options, please just click the 'No Response' button."
                 },
                 "showPreviousButton": false,
                 "audioTypes": ["ogg"],
                 "videoTypes": ["mp4"],
                 "showWaitForRecordingMessage": false
             }
+        },
+        "bunny-outro": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "bunnyoutro",
+                "nextButtonText": "Finish"
+            },
+            "backgroundColor": "white",
+            "showWaitForRecordingMessage": false,
+            "autoProceed": false,
+            "requireVideoCount": 1,
+            "doRecording": false,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ]
         },
         "counting-check": {
             "kind": "choice",
@@ -863,13 +871,6 @@
                         "source": "VIDEO1",
                         "nextButtonText": "Next"
                     },
-                    "parentTextBlock": {
-                      "css": {
-                          "font": "11pt sans-serif"
-                      },
-                      "title": "For Parents:",
-                      "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
-                    },
                     "doRecording": true
                 },
                 {
@@ -877,13 +878,6 @@
                         "position": "fill",
                         "source": "VIDEO2",
                         "nextButtonText": "Next"
-                    },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -893,13 +887,6 @@
                         "source": "VIDEO3",
                         "nextButtonText": "Next"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
-                    },
                     "doRecording": true
                 },
                 {
@@ -907,13 +894,6 @@
                         "position": "fill",
                         "source": "VIDEO4",
                         "nextButtonText": "Next"
-                    },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 },
@@ -923,13 +903,6 @@
                         "source": "VIDEO5",
                         "nextButtonText": "Next"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
-                    },
                     "doRecording": true
                 },
                 {
@@ -938,13 +911,6 @@
                         "source": "VIDEO6",
                         "nextButtonText": "Next"
                     },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
-                    },
                     "doRecording": true
                 },
                 {
@@ -952,13 +918,6 @@
                         "position": "fill",
                         "source": "VIDEO7",
                         "nextButtonText": "Next"
-                    },
-                    "parentTextBlock": {
-                        "css": {
-                            "font": "11pt sans-serif"
-                        },
-                        "title": "For Parents:",
-                        "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                     },
                     "doRecording": true
                 }
@@ -986,6 +945,7 @@
             "commonFrameProperties": {
                 "kind": "exp-lookit-video",
                 "backgroundColor": "white",
+                "showWaitForRecordingMessage": false,
                 "autoProceed": false,
                 "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
                 "videoTypes": [
@@ -993,7 +953,11 @@
                 ],
                 "requiredDuration": 0,
                 "requireAudioCount": 0,
-                "requireVideoCount": 1
+                "requireVideoCount": 1,
+                "parentTextBlock": {
+                    "title": "For Parents:",
+                    "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                }
             }
         },
         "info-survey": {
@@ -1026,7 +990,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "In this study, we want to know how children use what they know about their own abilities -- in this case, their ability to count -- to help make decisions. As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves.  \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
+                "text": "In this study, we want to know if children understand what makes sets easier and harder to count, even before they have a lot of experience counting themselves. As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves. \n\nThank you so much for participating! You will receive an email from Lookit with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
             }
         }
     },
@@ -1041,8 +1005,8 @@
         "trials-intro",
         "trials",
         "counting-check",
+        "bunny-outro",
         "info-survey",
         "exit-survey"
-
     ]
 }
