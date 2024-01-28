@@ -841,26 +841,6 @@
                 "showWaitForRecordingMessage": false
             }
         },
-        "bunny-outro": {
-            "kind": "exp-lookit-video",
-            "video": {
-                "loop": false,
-                "position": "fill",
-                "source": "bunnyoutro",
-                "nextButtonText": "Finish"
-            },
-            "backgroundColor": "white",
-            "showWaitForRecordingMessage": false,
-            "autoProceed": false,
-            "requireVideoCount": 1,
-            "doRecording": false,
-            "frameOffsetAfterPause": 0,
-            "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
-            "videoTypes": [
-                "webm",
-                "mp4"
-            ]
-        },
         "counting-check": {
             "kind": "choice",
             "sampler": "random-parameter-set",
@@ -956,9 +936,28 @@
                 "requireVideoCount": 1,
                 "parentTextBlock": {
                     "title": "For Parents:",
-                    "text": "Have your child count the items on the screen outloud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
+                    "text": "Have your child count the items on the screen out loud. No worries if they cannot count all of them! Just move on to the next slide. We're interested in what your child thinks without your help, so please don't give them any hints or feedback!"
                 }
             }
+        },
+        "bunny-outro": {
+            "kind": "exp-lookit-video",
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "bunnyoutro",
+                "nextButtonText": "Finish"
+            },
+            "backgroundColor": "white",
+            "autoProceed": false,
+            "requireVideoCount": 1,
+            "doRecording": false,
+            "frameOffsetAfterPause": 0,
+            "baseDir": "https://raw.githubusercontent.com/karlaeperez/lookit-stimuli-template/master/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ]
         },
         "info-survey": {
                 "kind": "exp-lookit-survey",
@@ -985,12 +984,14 @@
                         }
                     }
                 },
-                "nextButtonText": "Next"
+                "nextButtonText": "Next",
+                "doRecording": false
         },
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
+            "doRecording": false,
             "debriefing": {
-                "text": "In this study, we want to know if children understand what makes sets easier and harder to count, even before they have a lot of experience counting themselves. As you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting:  given two cards, each with a different number of dots, which card is easier to count? The dots could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest.\n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis here is that children actively choose learning tasks which are most appropriate for themselves. \n\nThank you so much for participating! You will receive an email from Children Helping Science with your payment information. Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
+                "text": "In this study, we want to know if children understand what makes sets easier and harder to count, even before they have a lot of experience counting themselves. \n\nAs you may recall, we started off by asking your child to determine which book page is easier to read, and then which tower is easier to build. These were warm up trials. Then, your child was asked to make a series of judgments about counting: given two cards, with the same number of dots within each pair, which card is easier to count? The dots between pairs could vary in three basic ways: size, color, and spatial arrangement. These were our main trials of interest. In the final set of trials, your child was asked to count items on a screen. This structure will allow is to see if children are sensitive to properties that affect task difficulty—in this case, which card is easier to count (as measured by the main trials of interest)—in respect to their own counting abilities (as measured by the final trials). \n\nWhy is this important? \n\nScientists still don’t completely understand how children learn as quickly as they do. Our hypothesis is that children actively choose learning tasks which are most appropriate for themselves. As such, in this study we expect that even children who cannot yet count up all the dots in the trials will still distinguish which card is easier to count.\n\nThank you so much for participating! Our lab will email you a $5 Amazon.com gift card within three days of participation to thank you for your time. (One gift card per child, your child must be in the age range for the study, and your child must be visible during the study.) Please don’t hesitate to contact me at perezke@mit.edu if you have any additional questions or feedback."
             }
         }
     },
